@@ -41,8 +41,178 @@
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->        
+        <!--<link rel="stylesheet" href="style.css" type="text/css" />-->
+        <link href='http://fonts.googleapis.com/css?family=Gravitas+One' rel='stylesheet'>
+        <style type="text/css">
+            @import url(style.css);
+            * {
+                font-weight: bold;
+            }
+            p{
+                color: red;
+            }
+
+            a:link{
+                color: aqua;    
+            }
+            a:visited{
+                color: antiquewhite;
+            }
+            a:hover{
+                color: background;
+            }
+            a:active{
+                color: red;
+            }
+            blockquote:before {
+                content: "ПРИМЕЧАНИЕ!";
+            }
+            input:focus{
+                background-color: green;
+            }
+            abbr[title]{
+                color: chartreuse;
+            }
+            a[href="#A"]:visited{
+                color: white;
+            }
+            a[href^="#"]:visited{
+                color: red;
+            }
+            a[href$="A"]:visited{
+                color: brown;
+            }
+            a[href*="A"]:visited{
+                color: blue;
+            }
+            input[type="text"]{
+                color:#cc99ff;
+            }
+            p>strong{
+                color: blueviolet;
+            }
+            article:first-child{
+                color: brown;
+            }
+            em:first-of-type{
+                color: blanchedalmond;
+            }
+            tr:nth-child(odd){
+                color: red
+            }
+            h1+p{
+                color: greenyellow;
+            }
+            
+        </style>
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+            <img alt="Первый сайт" src="images/banner.png">
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <article>
+                <h1><a href="#A">Pellentesque</a> habitant morbi tristique.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam nibh vitae tellus porttitor rhoncus. 
+                    <strong>Fusce</strong> quis mauris rhoncus, hendrerit felis sit amet, feugiat lorem. Interdum et malesuada fames ac ante 
+                    ipsum primis in faucibus. <abbr title="Aaaa Lllll">AL</abbr> iquam quis augue ac sem imperdiet bibendum vitae ut eros. Sed sollicitudin sed 
+                    orci sit<em> amet aliquam</em>. Phasellus nec erat turpis. Mauris eu neque lobortis, blandit leo nec, tempus dui. 
+                    Maecenas eget felis euismod, dignissim leo a, auctor mauris.</p> 
+                <blockquote>Sed viverra vitae quam at condimentum. 
+                    Nam finibus maximus ligula, semper viverra leo tempus et. Vivamus ut orci finibus, ornare turpis id, 
+                    fringilla turpis. 
+                </blockquote>
+                <code>
+                    if(1==1){<br>
+                    echo "777"};<br>
+                </code>
+                <pre>
+                    111
+                        222
+                            333
+                </pre>
+                <aside>
+                    <dl>
+                        <dt>Aliquam</dt>
+                        <dd>quis augue ac sem imperdiet bibendum vitae ut eros. Sed sollicitudin sed 
+                            orci sit amet aliquam. Phasellus nec erat turpis. Mauris eu neque lobortis, blandit leo nec, tempus dui. 
+                            Maecenas eget felis euismod, dignissim leo a, auctor mauris.</dd>
+                        <dt>Mauris</dt>
+                        <dd>Nam at scelerisque orci. Suspendisse sed lacinia arcu. Donec et lacus posuere, 
+                        pulvinar lacus quis, ultrices dolor. Nunc vehicula lorem turpis, ac semper magna consequat vel. 
+                        Aliquam quis massa orci. </dd>                       
+                    </dl>
+                </aside>
+                    
+            </article>
+            <article>
+                <h2>Nam vel ante a enim vestibulum condimentum.</h2>
+                <p>Etiam at tristique tellus, eget semper augue. <cite>Aliquam sed erat imperdiet, consectetur felis iaculis, 
+                    semper dui. Quisque non justo eu erat feugiat vehicula et id eros.</cite> Donec facilisis est ac urna laoreet 
+                    blandit quis ac erat. Etiam finibus ex dapibus nisl convallis fringilla. Quisque metus orci, faucibus 
+                    vel diam tincidunt, tempor varius erat. In maximus faucibus malesuada. Aliquam vel dui eu lacus posuere 
+                    feugiat varius vel tellus. Nam at scelerisque orci. Suspendisse sed lacinia arcu. Donec et lacus posuere, 
+                    pulvinar lacus quis, ultrices dolor. Nunc vehicula lorem turpis, ac semper magna consequat vel. 
+                    Aliquam quis massa orci. Proin laoreet quam at tellus dignissim, eu egestas turpis elementum. 
+                    Praesent magna est, malesuada vitae auctor sed, pellentesque et ligula.</p>
+            </article>
+            <article>
+                <h2> Pellentesque leo nulla, auctor id justo.</h2>
+                <p id="A">Aenean maximus tellus et velit porta congue. Suspendisse non leo pulvinar felis consequat tristique molestie 
+                    et odio. In pharetra, ligula in maximus tempus, justo mauris facilisis diam, quis ornare enim mi vitae eros. 
+                    Proin sem mauris, vestibulum et malesuada quis, volutpat nec massa. Integer vitae vestibulum erat, sit amet 
+                    eleifend tellus. Nam at accumsan ligula. Phasellus volutpat mauris massa, nec euismod felis tincidunt eget. </p>
+            </article>
+        </section>        
+        <section>
+            <figure>
+                <img src="images/img1.jpg" alt="Парусник">
+                <figcaption>Праусник</figcaption>
+            </figure>
+            <figure>
+                <img src="images/img2.jpg" alt="Машина">
+                <figcaption>Машина</figcaption>
+            </figure>
+            <figure>
+                <img src="images/img3.jpg" alt="Люди">
+                <figcaption>Люди</figcaption>
+            </figure>
+            <input type="text" />
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>            
+            </table>
+            
+        </section>        
+        <footer>
+            <address>НСК ул.Ленина д.1</address>
+        </footer>
     </body>
 </html>
